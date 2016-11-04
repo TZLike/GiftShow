@@ -1,0 +1,6 @@
+framework module Pods_GiftShow {
+  umbrella header "Pods-GiftShow-umbrella.h"
+
+  export *
+  module * { export * }
+}
