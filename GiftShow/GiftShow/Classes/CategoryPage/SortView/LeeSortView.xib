@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeeSortView" customModule="GiftShow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popover_background_right" translatesAutoresizingMaskIntoConstraints="NO" id="qEh-ch-Yjd">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Su-8A-iPz">
+                    <rect key="frame" x="2" y="15" width="196" height="125"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3Su-8A-iPz" firstAttribute="bottom" secondItem="qEh-ch-Yjd" secondAttribute="bottom" id="BNb-4j-X7Y"/>
+                <constraint firstAttribute="trailing" secondItem="qEh-ch-Yjd" secondAttribute="trailing" id="SVi-h6-lr5"/>
+                <constraint firstItem="qEh-ch-Yjd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UCS-Mw-XNf"/>
+                <constraint firstItem="3Su-8A-iPz" firstAttribute="leading" secondItem="qEh-ch-Yjd" secondAttribute="leading" constant="2" id="aZi-uA-GKi"/>
+                <constraint firstItem="3Su-8A-iPz" firstAttribute="trailing" secondItem="qEh-ch-Yjd" secondAttribute="trailing" constant="-2" id="dvf-F4-dlO"/>
+                <constraint firstItem="3Su-8A-iPz" firstAttribute="top" secondItem="qEh-ch-Yjd" secondAttribute="top" constant="15" id="jup-6y-0EN"/>
+                <constraint firstAttribute="bottom" secondItem="qEh-ch-Yjd" secondAttribute="bottom" id="k99-e1-BsJ"/>
+                <constraint firstItem="qEh-ch-Yjd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wtF-tJ-faw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myTableView" destination="3Su-8A-iPz" id="Elk-mQ-ycv"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="35"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popover_background_right" width="38" height="20"/>
+    </resources>
+</document>

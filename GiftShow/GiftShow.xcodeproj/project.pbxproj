@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74C78E4DA2426DF687B9804F /* Pods_GiftShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674A676D3C2A298E88864EED /* Pods_GiftShow.framework */; };
 		84D4FD1A1DCC15FC00F4407D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD191DCC15FC00F4407D /* AppDelegate.swift */; };
 		84D4FD211DCC15FC00F4407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D4FD201DCC15FC00F4407D /* Assets.xcassets */; };
 		84D4FD451DCC27E500F4407D /* LeeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD441DCC27E500F4407D /* LeeHomeViewController.swift */; };
@@ -19,9 +20,95 @@
 		84D4FD531DCC28D200F4407D /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD511DCC28D200F4407D /* UIColor+extension.swift */; };
 		84D4FD561DCC28E700F4407D /* UIBarButtonItem+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD541DCC28E700F4407D /* UIBarButtonItem+Item.swift */; };
 		84D4FD571DCC28E700F4407D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD551DCC28E700F4407D /* UIImage+Extension.swift */; };
+		84D4FD591DCC58A800F4407D /* LeeHomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD581DCC58A800F4407D /* LeeHomeBannerView.swift */; };
+		84D4FD5B1DCC592400F4407D /* LeeHomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4FD5A1DCC592400F4407D /* LeeHomeBottomView.swift */; };
+		84E0152B1DCC71180024C5F6 /* LeeHomeVVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0152A1DCC71180024C5F6 /* LeeHomeVVModel.swift */; };
+		84E015321DCC713C0024C5F6 /* LeeAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0152C1DCC713C0024C5F6 /* LeeAuthor.swift */; };
+		84E015331DCC713C0024C5F6 /* LeeBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0152D1DCC713C0024C5F6 /* LeeBannerModel.swift */; };
+		84E015341DCC713C0024C5F6 /* LeeBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0152E1DCC713C0024C5F6 /* LeeBaseModel.swift */; };
+		84E015351DCC713C0024C5F6 /* LeeColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0152F1DCC713C0024C5F6 /* LeeColumn.swift */; };
+		84E015361DCC713C0024C5F6 /* LeeCotentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015301DCC713C0024C5F6 /* LeeCotentModel.swift */; };
+		84E015371DCC713C0024C5F6 /* LeeMiddleBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015311DCC713C0024C5F6 /* LeeMiddleBannerModel.swift */; };
+		84E0153B1DCC716A0024C5F6 /* LeeHotBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015381DCC716A0024C5F6 /* LeeHotBannerModel.swift */; };
+		84E0153C1DCC716A0024C5F6 /* LeeHotMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015391DCC716A0024C5F6 /* LeeHotMainModel.swift */; };
+		84E0153D1DCC716A0024C5F6 /* LeeHotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0153A1DCC716A0024C5F6 /* LeeHotModel.swift */; };
+		84E0153F1DCC718D0024C5F6 /* LeeGiftNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0153E1DCC718D0024C5F6 /* LeeGiftNetworkTool.swift */; };
+		84E015481DCC722D0024C5F6 /* LeeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015401DCC722D0024C5F6 /* LeeCategoryModel.swift */; };
+		84E015491DCC722D0024C5F6 /* LeeCateSingleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015411DCC722D0024C5F6 /* LeeCateSingleListModel.swift */; };
+		84E0154A1DCC722D0024C5F6 /* LeeChannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015421DCC722D0024C5F6 /* LeeChannerModel.swift */; };
+		84E0154B1DCC722D0024C5F6 /* LeeSingleCateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015431DCC722D0024C5F6 /* LeeSingleCateModel.swift */; };
+		84E0154C1DCC722D0024C5F6 /* LeeSingleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015441DCC722D0024C5F6 /* LeeSingleModel.swift */; };
+		84E0154D1DCC722D0024C5F6 /* LeeSingleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015451DCC722D0024C5F6 /* LeeSingleTableCell.swift */; };
+		84E0154E1DCC722D0024C5F6 /* LeeSingleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015461DCC722D0024C5F6 /* LeeSingleTableCell.xib */; };
+		84E0154F1DCC722D0024C5F6 /* LeeTopCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015471DCC722D0024C5F6 /* LeeTopCategoryModel.swift */; };
+		84E015541DCC72DD0024C5F6 /* LeeCommonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015501DCC72DD0024C5F6 /* LeeCommonDetailViewController.swift */; };
+		84E015551DCC72DD0024C5F6 /* LeeProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015511DCC72DD0024C5F6 /* LeeProductDetailViewController.swift */; };
+		84E015561DCC72DD0024C5F6 /* LeeProductRecommendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015521DCC72DD0024C5F6 /* LeeProductRecommendDetailViewController.swift */; };
+		84E015571DCC72DD0024C5F6 /* LeeProductWebDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015531DCC72DD0024C5F6 /* LeeProductWebDetailViewController.swift */; };
+		84E015591DCC72E90024C5F6 /* LeeListDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015581DCC72E90024C5F6 /* LeeListDetailModel.swift */; };
+		84E015601DCC72F90024C5F6 /* LeeBottomToBuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0155A1DCC72F90024C5F6 /* LeeBottomToBuyView.swift */; };
+		84E015611DCC72F90024C5F6 /* LeeBottomToBuyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0155B1DCC72F90024C5F6 /* LeeBottomToBuyView.xib */; };
+		84E015621DCC72F90024C5F6 /* LeeDetailBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0155C1DCC72F90024C5F6 /* LeeDetailBanner.swift */; };
+		84E015631DCC72F90024C5F6 /* LeeProductBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0155D1DCC72F90024C5F6 /* LeeProductBottomView.swift */; };
+		84E015641DCC72F90024C5F6 /* LeeProductDetailReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0155E1DCC72F90024C5F6 /* LeeProductDetailReusable.swift */; };
+		84E015651DCC72F90024C5F6 /* LeeProductDetailReusable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0155F1DCC72F90024C5F6 /* LeeProductDetailReusable.xib */; };
+		84E015751DCC74250024C5F6 /* LeeBaseFatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015721DCC74250024C5F6 /* LeeBaseFatherViewController.swift */; };
+		84E015761DCC74250024C5F6 /* LeeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015731DCC74250024C5F6 /* LeeLoginViewController.swift */; };
+		84E015771DCC74250024C5F6 /* LeeLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015741DCC74250024C5F6 /* LeeLoginViewController.xib */; };
+		84E015791DCC74380024C5F6 /* LeeRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015781DCC74380024C5F6 /* LeeRefresh.swift */; };
+		84E0157F1DCC74840024C5F6 /* LeeRaidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0157A1DCC74840024C5F6 /* LeeRaidersViewController.swift */; };
+		84E015801DCC74840024C5F6 /* LeeSingleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0157B1DCC74840024C5F6 /* LeeSingleListViewController.swift */; };
+		84E015811DCC74840024C5F6 /* LeeSingleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0157C1DCC74840024C5F6 /* LeeSingleListViewController.xib */; };
+		84E015821DCC74840024C5F6 /* LeeSingleProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0157D1DCC74840024C5F6 /* LeeSingleProductViewController.swift */; };
+		84E015831DCC74840024C5F6 /* LeeSingleProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0157E1DCC74840024C5F6 /* LeeSingleProductViewController.xib */; };
+		84E015931DCC749B0024C5F6 /* LeeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015841DCC749B0024C5F6 /* LeeCategoryCell.swift */; };
+		84E015941DCC749B0024C5F6 /* LeeCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015851DCC749B0024C5F6 /* LeeCategoryCell.xib */; };
+		84E015951DCC749B0024C5F6 /* LeeCategoryNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015861DCC749B0024C5F6 /* LeeCategoryNavView.swift */; };
+		84E015961DCC749B0024C5F6 /* LeeCategoryTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015871DCC749B0024C5F6 /* LeeCategoryTopView.swift */; };
+		84E015971DCC749B0024C5F6 /* LeeCategoryTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015881DCC749B0024C5F6 /* LeeCategoryTopView.xib */; };
+		84E015981DCC749B0024C5F6 /* LeeCateHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015891DCC749B0024C5F6 /* LeeCateHeaderReusableView.swift */; };
+		84E015991DCC749B0024C5F6 /* LeeCateHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0158A1DCC749B0024C5F6 /* LeeCateHeaderReusableView.xib */; };
+		84E0159A1DCC749B0024C5F6 /* LeeCateMoreBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0158B1DCC749B0024C5F6 /* LeeCateMoreBtnCell.swift */; };
+		84E0159B1DCC749B0024C5F6 /* LeeCateMoreBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0158C1DCC749B0024C5F6 /* LeeCateMoreBtnCell.xib */; };
+		84E0159C1DCC749B0024C5F6 /* LeeCateReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0158D1DCC749B0024C5F6 /* LeeCateReusableView.swift */; };
+		84E0159D1DCC749B0024C5F6 /* LeeCateReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0158E1DCC749B0024C5F6 /* LeeCateReusableView.xib */; };
+		84E0159E1DCC749B0024C5F6 /* LeeCateTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0158F1DCC749B0024C5F6 /* LeeCateTopCell.swift */; };
+		84E0159F1DCC749B0024C5F6 /* LeeCateTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015901DCC749B0024C5F6 /* LeeCateTopCell.xib */; };
+		84E015A01DCC749B0024C5F6 /* LeeSingleCollecitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015911DCC749B0024C5F6 /* LeeSingleCollecitionCell.swift */; };
+		84E015A11DCC749B0024C5F6 /* LeeSingleCollecitionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015921DCC749B0024C5F6 /* LeeSingleCollecitionCell.xib */; };
+		84E015A71DCC74AB0024C5F6 /* LeeSortListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015A31DCC74AB0024C5F6 /* LeeSortListCell.swift */; };
+		84E015A81DCC74AB0024C5F6 /* LeeSortListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015A41DCC74AB0024C5F6 /* LeeSortListCell.xib */; };
+		84E015A91DCC74AB0024C5F6 /* LeeSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015A51DCC74AB0024C5F6 /* LeeSortView.swift */; };
+		84E015AA1DCC74AB0024C5F6 /* LeeSortView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015A61DCC74AB0024C5F6 /* LeeSortView.xib */; };
+		84E015AC1DCC74D80024C5F6 /* LeeHotCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015AB1DCC74D80024C5F6 /* LeeHotCategoryViewController.swift */; };
+		84E015B41DCC74ED0024C5F6 /* LeeHotBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015AD1DCC74ED0024C5F6 /* LeeHotBottomView.swift */; };
+		84E015B51DCC74ED0024C5F6 /* LeeHotContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015AE1DCC74ED0024C5F6 /* LeeHotContentCell.swift */; };
+		84E015B61DCC74ED0024C5F6 /* LeeHotCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015AF1DCC74ED0024C5F6 /* LeeHotCoverView.swift */; };
+		84E015B71DCC74ED0024C5F6 /* LeeHotCoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015B01DCC74ED0024C5F6 /* LeeHotCoverView.xib */; };
+		84E015B81DCC74ED0024C5F6 /* LeeHotTopBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015B11DCC74ED0024C5F6 /* LeeHotTopBanner.swift */; };
+		84E015B91DCC74ED0024C5F6 /* LeeTopBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015B21DCC74ED0024C5F6 /* LeeTopBanner.swift */; };
+		84E015BA1DCC74ED0024C5F6 /* LeeTopBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015B31DCC74ED0024C5F6 /* LeeTopBanner.xib */; };
+		84E015BC1DCC756E0024C5F6 /* LeeHomeSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015BB1DCC756E0024C5F6 /* LeeHomeSearchView.xib */; };
+		84E015BE1DCC75730024C5F6 /* LeeHomeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015BD1DCC75730024C5F6 /* LeeHomeSearchView.swift */; };
+		84E015C01DCC765D0024C5F6 /* FZLTXHK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 84E015BF1DCC765D0024C5F6 /* FZLTXHK.TTF */; };
+		84E015C31DCC79560024C5F6 /* LeeHomeOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015C11DCC79560024C5F6 /* LeeHomeOtherViewController.swift */; };
+		84E015C41DCC79560024C5F6 /* LeeHomeWonderfulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015C21DCC79560024C5F6 /* LeeHomeWonderfulViewController.swift */; };
+		84E015CB1DCC79920024C5F6 /* LeeHomeCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015C61DCC79920024C5F6 /* LeeHomeCycleView.swift */; };
+		84E015CC1DCC79920024C5F6 /* LeeHomeCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015C71DCC79920024C5F6 /* LeeHomeCycleView.xib */; };
+		84E015CD1DCC79920024C5F6 /* LeeHomeSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015C81DCC79920024C5F6 /* LeeHomeSearchView.xib */; };
+		84E015CE1DCC79920024C5F6 /* LeeMiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015C91DCC79920024C5F6 /* LeeMiddleView.swift */; };
+		84E015CF1DCC79920024C5F6 /* LeeMiddleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015CA1DCC79920024C5F6 /* LeeMiddleView.xib */; };
+		84E015D21DCC7B0F0024C5F6 /* LeeTopCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015D01DCC7B0F0024C5F6 /* LeeTopCollectionCell.swift */; };
+		84E015D31DCC7B0F0024C5F6 /* LeeTopCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015D11DCC7B0F0024C5F6 /* LeeTopCollectionCell.xib */; };
+		84E015D61DCC7B9D0024C5F6 /* LeeMiddleBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015D41DCC7B9D0024C5F6 /* LeeMiddleBannerCell.swift */; };
+		84E015D71DCC7B9D0024C5F6 /* LeeMiddleBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015D51DCC7B9D0024C5F6 /* LeeMiddleBannerCell.xib */; };
+		84E015DA1DCC7BBA0024C5F6 /* LeeCotentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E015D81DCC7BBA0024C5F6 /* LeeCotentCell.swift */; };
+		84E015DB1DCC7BBA0024C5F6 /* LeeCotentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E015D91DCC7BBA0024C5F6 /* LeeCotentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1FB3F3C54FE195E57BC28C /* Pods-GiftShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiftShow/Pods-GiftShow.release.xcconfig"; sourceTree = "<group>"; };
+		674A676D3C2A298E88864EED /* Pods_GiftShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4FD161DCC15FC00F4407D /* GiftShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4FD191DCC15FC00F4407D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D4FD201DCC15FC00F4407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +123,91 @@
 		84D4FD511DCC28D200F4407D /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		84D4FD541DCC28E700F4407D /* UIBarButtonItem+Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Item.swift"; sourceTree = "<group>"; };
 		84D4FD551DCC28E700F4407D /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		84D4FD581DCC58A800F4407D /* LeeHomeBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeBannerView.swift; sourceTree = "<group>"; };
+		84D4FD5A1DCC592400F4407D /* LeeHomeBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeBottomView.swift; sourceTree = "<group>"; };
+		84E0152A1DCC71180024C5F6 /* LeeHomeVVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeVVModel.swift; sourceTree = "<group>"; };
+		84E0152C1DCC713C0024C5F6 /* LeeAuthor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeAuthor.swift; sourceTree = "<group>"; };
+		84E0152D1DCC713C0024C5F6 /* LeeBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeBannerModel.swift; sourceTree = "<group>"; };
+		84E0152E1DCC713C0024C5F6 /* LeeBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeBaseModel.swift; sourceTree = "<group>"; };
+		84E0152F1DCC713C0024C5F6 /* LeeColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeColumn.swift; sourceTree = "<group>"; };
+		84E015301DCC713C0024C5F6 /* LeeCotentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCotentModel.swift; sourceTree = "<group>"; };
+		84E015311DCC713C0024C5F6 /* LeeMiddleBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeMiddleBannerModel.swift; sourceTree = "<group>"; };
+		84E015381DCC716A0024C5F6 /* LeeHotBannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotBannerModel.swift; sourceTree = "<group>"; };
+		84E015391DCC716A0024C5F6 /* LeeHotMainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotMainModel.swift; sourceTree = "<group>"; };
+		84E0153A1DCC716A0024C5F6 /* LeeHotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotModel.swift; sourceTree = "<group>"; };
+		84E0153E1DCC718D0024C5F6 /* LeeGiftNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeGiftNetworkTool.swift; sourceTree = "<group>"; };
+		84E015401DCC722D0024C5F6 /* LeeCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCategoryModel.swift; sourceTree = "<group>"; };
+		84E015411DCC722D0024C5F6 /* LeeCateSingleListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCateSingleListModel.swift; sourceTree = "<group>"; };
+		84E015421DCC722D0024C5F6 /* LeeChannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeChannerModel.swift; sourceTree = "<group>"; };
+		84E015431DCC722D0024C5F6 /* LeeSingleCateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSingleCateModel.swift; sourceTree = "<group>"; };
+		84E015441DCC722D0024C5F6 /* LeeSingleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSingleModel.swift; sourceTree = "<group>"; };
+		84E015451DCC722D0024C5F6 /* LeeSingleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSingleTableCell.swift; sourceTree = "<group>"; };
+		84E015461DCC722D0024C5F6 /* LeeSingleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeSingleTableCell.xib; sourceTree = "<group>"; };
+		84E015471DCC722D0024C5F6 /* LeeTopCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeTopCategoryModel.swift; sourceTree = "<group>"; };
+		84E015501DCC72DD0024C5F6 /* LeeCommonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCommonDetailViewController.swift; sourceTree = "<group>"; };
+		84E015511DCC72DD0024C5F6 /* LeeProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeProductDetailViewController.swift; sourceTree = "<group>"; };
+		84E015521DCC72DD0024C5F6 /* LeeProductRecommendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeProductRecommendDetailViewController.swift; sourceTree = "<group>"; };
+		84E015531DCC72DD0024C5F6 /* LeeProductWebDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeProductWebDetailViewController.swift; sourceTree = "<group>"; };
+		84E015581DCC72E90024C5F6 /* LeeListDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeListDetailModel.swift; sourceTree = "<group>"; };
+		84E0155A1DCC72F90024C5F6 /* LeeBottomToBuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeBottomToBuyView.swift; sourceTree = "<group>"; };
+		84E0155B1DCC72F90024C5F6 /* LeeBottomToBuyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeBottomToBuyView.xib; sourceTree = "<group>"; };
+		84E0155C1DCC72F90024C5F6 /* LeeDetailBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeDetailBanner.swift; sourceTree = "<group>"; };
+		84E0155D1DCC72F90024C5F6 /* LeeProductBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeProductBottomView.swift; sourceTree = "<group>"; };
+		84E0155E1DCC72F90024C5F6 /* LeeProductDetailReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeProductDetailReusable.swift; sourceTree = "<group>"; };
+		84E0155F1DCC72F90024C5F6 /* LeeProductDetailReusable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeProductDetailReusable.xib; sourceTree = "<group>"; };
+		84E015721DCC74250024C5F6 /* LeeBaseFatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeBaseFatherViewController.swift; sourceTree = "<group>"; };
+		84E015731DCC74250024C5F6 /* LeeLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeLoginViewController.swift; sourceTree = "<group>"; };
+		84E015741DCC74250024C5F6 /* LeeLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeLoginViewController.xib; sourceTree = "<group>"; };
+		84E015781DCC74380024C5F6 /* LeeRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeRefresh.swift; sourceTree = "<group>"; };
+		84E0157A1DCC74840024C5F6 /* LeeRaidersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeRaidersViewController.swift; sourceTree = "<group>"; };
+		84E0157B1DCC74840024C5F6 /* LeeSingleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSingleListViewController.swift; sourceTree = "<group>"; };
+		84E0157C1DCC74840024C5F6 /* LeeSingleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeSingleListViewController.xib; sourceTree = "<group>"; };
+		84E0157D1DCC74840024C5F6 /* LeeSingleProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSingleProductViewController.swift; sourceTree = "<group>"; };
+		84E0157E1DCC74840024C5F6 /* LeeSingleProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeSingleProductViewController.xib; sourceTree = "<group>"; };
+		84E015841DCC749B0024C5F6 /* LeeCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCategoryCell.swift; sourceTree = "<group>"; };
+		84E015851DCC749B0024C5F6 /* LeeCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCategoryCell.xib; sourceTree = "<group>"; };
+		84E015861DCC749B0024C5F6 /* LeeCategoryNavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCategoryNavView.swift; sourceTree = "<group>"; };
+		84E015871DCC749B0024C5F6 /* LeeCategoryTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCategoryTopView.swift; sourceTree = "<group>"; };
+		84E015881DCC749B0024C5F6 /* LeeCategoryTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCategoryTopView.xib; sourceTree = "<group>"; };
+		84E015891DCC749B0024C5F6 /* LeeCateHeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCateHeaderReusableView.swift; sourceTree = "<group>"; };
+		84E0158A1DCC749B0024C5F6 /* LeeCateHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCateHeaderReusableView.xib; sourceTree = "<group>"; };
+		84E0158B1DCC749B0024C5F6 /* LeeCateMoreBtnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCateMoreBtnCell.swift; sourceTree = "<group>"; };
+		84E0158C1DCC749B0024C5F6 /* LeeCateMoreBtnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCateMoreBtnCell.xib; sourceTree = "<group>"; };
+		84E0158D1DCC749B0024C5F6 /* LeeCateReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCateReusableView.swift; sourceTree = "<group>"; };
+		84E0158E1DCC749B0024C5F6 /* LeeCateReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCateReusableView.xib; sourceTree = "<group>"; };
+		84E0158F1DCC749B0024C5F6 /* LeeCateTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCateTopCell.swift; sourceTree = "<group>"; };
+		84E015901DCC749B0024C5F6 /* LeeCateTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCateTopCell.xib; sourceTree = "<group>"; };
+		84E015911DCC749B0024C5F6 /* LeeSingleCollecitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSingleCollecitionCell.swift; sourceTree = "<group>"; };
+		84E015921DCC749B0024C5F6 /* LeeSingleCollecitionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeSingleCollecitionCell.xib; sourceTree = "<group>"; };
+		84E015A31DCC74AB0024C5F6 /* LeeSortListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSortListCell.swift; sourceTree = "<group>"; };
+		84E015A41DCC74AB0024C5F6 /* LeeSortListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeSortListCell.xib; sourceTree = "<group>"; };
+		84E015A51DCC74AB0024C5F6 /* LeeSortView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeSortView.swift; sourceTree = "<group>"; };
+		84E015A61DCC74AB0024C5F6 /* LeeSortView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeSortView.xib; sourceTree = "<group>"; };
+		84E015AB1DCC74D80024C5F6 /* LeeHotCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotCategoryViewController.swift; sourceTree = "<group>"; };
+		84E015AD1DCC74ED0024C5F6 /* LeeHotBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotBottomView.swift; sourceTree = "<group>"; };
+		84E015AE1DCC74ED0024C5F6 /* LeeHotContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotContentCell.swift; sourceTree = "<group>"; };
+		84E015AF1DCC74ED0024C5F6 /* LeeHotCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotCoverView.swift; sourceTree = "<group>"; };
+		84E015B01DCC74ED0024C5F6 /* LeeHotCoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeHotCoverView.xib; sourceTree = "<group>"; };
+		84E015B11DCC74ED0024C5F6 /* LeeHotTopBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHotTopBanner.swift; sourceTree = "<group>"; };
+		84E015B21DCC74ED0024C5F6 /* LeeTopBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeTopBanner.swift; sourceTree = "<group>"; };
+		84E015B31DCC74ED0024C5F6 /* LeeTopBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeTopBanner.xib; sourceTree = "<group>"; };
+		84E015BB1DCC756E0024C5F6 /* LeeHomeSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeHomeSearchView.xib; sourceTree = "<group>"; };
+		84E015BD1DCC75730024C5F6 /* LeeHomeSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeSearchView.swift; sourceTree = "<group>"; };
+		84E015BF1DCC765D0024C5F6 /* FZLTXHK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZLTXHK.TTF; sourceTree = "<group>"; };
+		84E015C11DCC79560024C5F6 /* LeeHomeOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeOtherViewController.swift; sourceTree = "<group>"; };
+		84E015C21DCC79560024C5F6 /* LeeHomeWonderfulViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeWonderfulViewController.swift; sourceTree = "<group>"; };
+		84E015C61DCC79920024C5F6 /* LeeHomeCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeHomeCycleView.swift; sourceTree = "<group>"; };
+		84E015C71DCC79920024C5F6 /* LeeHomeCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeHomeCycleView.xib; sourceTree = "<group>"; };
+		84E015C81DCC79920024C5F6 /* LeeHomeSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeHomeSearchView.xib; sourceTree = "<group>"; };
+		84E015C91DCC79920024C5F6 /* LeeMiddleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeMiddleView.swift; sourceTree = "<group>"; };
+		84E015CA1DCC79920024C5F6 /* LeeMiddleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeMiddleView.xib; sourceTree = "<group>"; };
+		84E015D01DCC7B0F0024C5F6 /* LeeTopCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeTopCollectionCell.swift; sourceTree = "<group>"; };
+		84E015D11DCC7B0F0024C5F6 /* LeeTopCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeTopCollectionCell.xib; sourceTree = "<group>"; };
+		84E015D41DCC7B9D0024C5F6 /* LeeMiddleBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeMiddleBannerCell.swift; sourceTree = "<group>"; };
+		84E015D51DCC7B9D0024C5F6 /* LeeMiddleBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeMiddleBannerCell.xib; sourceTree = "<group>"; };
+		84E015D81DCC7BBA0024C5F6 /* LeeCotentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeCotentCell.swift; sourceTree = "<group>"; };
+		84E015D91DCC7BBA0024C5F6 /* LeeCotentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeeCotentCell.xib; sourceTree = "<group>"; };
+		9AF63EEA74C66E4E0480E6F8 /* Pods-GiftShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiftShow/Pods-GiftShow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C78E4DA2426DF687B9804F /* Pods_GiftShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +227,8 @@
 			children = (
 				84D4FD181DCC15FC00F4407D /* GiftShow */,
 				84D4FD171DCC15FC00F4407D /* Products */,
+				9059946DCE1E5C517CCE7749 /* Pods */,
+				CB72ED20A569762B03FDC328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +280,10 @@
 		84D4FD2D1DCC222100F4407D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84E015501DCC72DD0024C5F6 /* LeeCommonDetailViewController.swift */,
+				84E015511DCC72DD0024C5F6 /* LeeProductDetailViewController.swift */,
+				84E015521DCC72DD0024C5F6 /* LeeProductRecommendDetailViewController.swift */,
+				84E015531DCC72DD0024C5F6 /* LeeProductWebDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,6 +291,7 @@
 		84D4FD2E1DCC222100F4407D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E015581DCC72E90024C5F6 /* LeeListDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +299,12 @@
 		84D4FD2F1DCC222100F4407D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84E0155A1DCC72F90024C5F6 /* LeeBottomToBuyView.swift */,
+				84E0155B1DCC72F90024C5F6 /* LeeBottomToBuyView.xib */,
+				84E0155C1DCC72F90024C5F6 /* LeeDetailBanner.swift */,
+				84E0155D1DCC72F90024C5F6 /* LeeProductBottomView.swift */,
+				84E0155E1DCC72F90024C5F6 /* LeeProductDetailReusable.swift */,
+				84E0155F1DCC72F90024C5F6 /* LeeProductDetailReusable.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +323,8 @@
 			isa = PBXGroup;
 			children = (
 				84D4FD441DCC27E500F4407D /* LeeHomeViewController.swift */,
+				84E015C11DCC79560024C5F6 /* LeeHomeOtherViewController.swift */,
+				84E015C21DCC79560024C5F6 /* LeeHomeWonderfulViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +332,12 @@
 		84D4FD321DCC222D00F4407D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E0152C1DCC713C0024C5F6 /* LeeAuthor.swift */,
+				84E0152D1DCC713C0024C5F6 /* LeeBannerModel.swift */,
+				84E0152E1DCC713C0024C5F6 /* LeeBaseModel.swift */,
+				84E0152F1DCC713C0024C5F6 /* LeeColumn.swift */,
+				84E015301DCC713C0024C5F6 /* LeeCotentModel.swift */,
+				84E015311DCC713C0024C5F6 /* LeeMiddleBannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +345,13 @@
 		84D4FD331DCC222D00F4407D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84E015D81DCC7BBA0024C5F6 /* LeeCotentCell.swift */,
+				84E015D91DCC7BBA0024C5F6 /* LeeCotentCell.xib */,
+				84E015C51DCC79920024C5F6 /* Banner */,
+				84E015BD1DCC75730024C5F6 /* LeeHomeSearchView.swift */,
+				84E015BB1DCC756E0024C5F6 /* LeeHomeSearchView.xib */,
+				84D4FD581DCC58A800F4407D /* LeeHomeBannerView.swift */,
+				84D4FD5A1DCC592400F4407D /* LeeHomeBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				84D4FD461DCC280000F4407D /* LeeHotViewController.swift */,
+				84E015AB1DCC74D80024C5F6 /* LeeHotCategoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +378,9 @@
 		84D4FD361DCC223900F4407D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E015381DCC716A0024C5F6 /* LeeHotBannerModel.swift */,
+				84E015391DCC716A0024C5F6 /* LeeHotMainModel.swift */,
+				84E0153A1DCC716A0024C5F6 /* LeeHotModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +388,13 @@
 		84D4FD371DCC223900F4407D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84E015AD1DCC74ED0024C5F6 /* LeeHotBottomView.swift */,
+				84E015AE1DCC74ED0024C5F6 /* LeeHotContentCell.swift */,
+				84E015AF1DCC74ED0024C5F6 /* LeeHotCoverView.swift */,
+				84E015B01DCC74ED0024C5F6 /* LeeHotCoverView.xib */,
+				84E015B11DCC74ED0024C5F6 /* LeeHotTopBanner.swift */,
+				84E015B21DCC74ED0024C5F6 /* LeeTopBanner.swift */,
+				84E015B31DCC74ED0024C5F6 /* LeeTopBanner.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +402,7 @@
 		84D4FD381DCC224700F4407D /* CategoryPage */ = {
 			isa = PBXGroup;
 			children = (
+				84E015A21DCC74AB0024C5F6 /* SortView */,
 				84D4FD391DCC224700F4407D /* Controller */,
 				84D4FD3A1DCC224700F4407D /* Model */,
 				84D4FD3B1DCC224700F4407D /* View */,
@@ -201,6 +414,11 @@
 			isa = PBXGroup;
 			children = (
 				84D4FD481DCC282100F4407D /* LeeCategoryViewController.swift */,
+				84E0157A1DCC74840024C5F6 /* LeeRaidersViewController.swift */,
+				84E0157B1DCC74840024C5F6 /* LeeSingleListViewController.swift */,
+				84E0157C1DCC74840024C5F6 /* LeeSingleListViewController.xib */,
+				84E0157D1DCC74840024C5F6 /* LeeSingleProductViewController.swift */,
+				84E0157E1DCC74840024C5F6 /* LeeSingleProductViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,6 +426,14 @@
 		84D4FD3A1DCC224700F4407D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84E015401DCC722D0024C5F6 /* LeeCategoryModel.swift */,
+				84E015411DCC722D0024C5F6 /* LeeCateSingleListModel.swift */,
+				84E015421DCC722D0024C5F6 /* LeeChannerModel.swift */,
+				84E015431DCC722D0024C5F6 /* LeeSingleCateModel.swift */,
+				84E015441DCC722D0024C5F6 /* LeeSingleModel.swift */,
+				84E015451DCC722D0024C5F6 /* LeeSingleTableCell.swift */,
+				84E015461DCC722D0024C5F6 /* LeeSingleTableCell.xib */,
+				84E015471DCC722D0024C5F6 /* LeeTopCategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +441,21 @@
 		84D4FD3B1DCC224700F4407D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84E015841DCC749B0024C5F6 /* LeeCategoryCell.swift */,
+				84E015851DCC749B0024C5F6 /* LeeCategoryCell.xib */,
+				84E015861DCC749B0024C5F6 /* LeeCategoryNavView.swift */,
+				84E015871DCC749B0024C5F6 /* LeeCategoryTopView.swift */,
+				84E015881DCC749B0024C5F6 /* LeeCategoryTopView.xib */,
+				84E015891DCC749B0024C5F6 /* LeeCateHeaderReusableView.swift */,
+				84E0158A1DCC749B0024C5F6 /* LeeCateHeaderReusableView.xib */,
+				84E0158B1DCC749B0024C5F6 /* LeeCateMoreBtnCell.swift */,
+				84E0158C1DCC749B0024C5F6 /* LeeCateMoreBtnCell.xib */,
+				84E0158D1DCC749B0024C5F6 /* LeeCateReusableView.swift */,
+				84E0158E1DCC749B0024C5F6 /* LeeCateReusableView.xib */,
+				84E0158F1DCC749B0024C5F6 /* LeeCateTopCell.swift */,
+				84E015901DCC749B0024C5F6 /* LeeCateTopCell.xib */,
+				84E015911DCC749B0024C5F6 /* LeeSingleCollecitionCell.swift */,
+				84E015921DCC749B0024C5F6 /* LeeSingleCollecitionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +504,7 @@
 		84D4FD411DCC226F00F4407D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				84E0153E1DCC718D0024C5F6 /* LeeGiftNetworkTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -270,6 +512,8 @@
 		84D4FD421DCC227D00F4407D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				84E015781DCC74380024C5F6 /* LeeRefresh.swift */,
+				84E0152A1DCC71180024C5F6 /* LeeHomeVVModel.swift */,
 				84D4FD501DCC28D200F4407D /* Common.swift */,
 				84D4FD511DCC28D200F4407D /* UIColor+extension.swift */,
 			);
@@ -279,10 +523,58 @@
 		84D4FD431DCC228400F4407D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				84E015BF1DCC765D0024C5F6 /* FZLTXHK.TTF */,
+				84E015721DCC74250024C5F6 /* LeeBaseFatherViewController.swift */,
+				84E015731DCC74250024C5F6 /* LeeLoginViewController.swift */,
+				84E015741DCC74250024C5F6 /* LeeLoginViewController.xib */,
 				84D4FD4C1DCC289400F4407D /* LeeBaseViewController.swift */,
 				84D4FD4D1DCC289400F4407D /* LeeNavgationController.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		84E015A21DCC74AB0024C5F6 /* SortView */ = {
+			isa = PBXGroup;
+			children = (
+				84E015A31DCC74AB0024C5F6 /* LeeSortListCell.swift */,
+				84E015A41DCC74AB0024C5F6 /* LeeSortListCell.xib */,
+				84E015A51DCC74AB0024C5F6 /* LeeSortView.swift */,
+				84E015A61DCC74AB0024C5F6 /* LeeSortView.xib */,
+			);
+			path = SortView;
+			sourceTree = "<group>";
+		};
+		84E015C51DCC79920024C5F6 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				84E015D41DCC7B9D0024C5F6 /* LeeMiddleBannerCell.swift */,
+				84E015D51DCC7B9D0024C5F6 /* LeeMiddleBannerCell.xib */,
+				84E015D01DCC7B0F0024C5F6 /* LeeTopCollectionCell.swift */,
+				84E015D11DCC7B0F0024C5F6 /* LeeTopCollectionCell.xib */,
+				84E015C61DCC79920024C5F6 /* LeeHomeCycleView.swift */,
+				84E015C71DCC79920024C5F6 /* LeeHomeCycleView.xib */,
+				84E015C81DCC79920024C5F6 /* LeeHomeSearchView.xib */,
+				84E015C91DCC79920024C5F6 /* LeeMiddleView.swift */,
+				84E015CA1DCC79920024C5F6 /* LeeMiddleView.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		9059946DCE1E5C517CCE7749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AF63EEA74C66E4E0480E6F8 /* Pods-GiftShow.debug.xcconfig */,
+				4C1FB3F3C54FE195E57BC28C /* Pods-GiftShow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB72ED20A569762B03FDC328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674A676D3C2A298E88864EED /* Pods_GiftShow.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +584,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D4FD281DCC15FC00F4407D /* Build configuration list for PBXNativeTarget "GiftShow" */;
 			buildPhases = (
+				E2A6D73F097701CED5DBE861 /* [CP] Check Pods Manifest.lock */,
 				84D4FD121DCC15FC00F4407D /* Sources */,
 				84D4FD131DCC15FC00F4407D /* Frameworks */,
 				84D4FD141DCC15FC00F4407D /* Resources */,
+				7CDE844FB139F0C6EEFFD8CA /* [CP] Embed Pods Frameworks */,
+				A59E962FB8A117E7C3CF95A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,28 +640,160 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E015941DCC749B0024C5F6 /* LeeCategoryCell.xib in Resources */,
+				84E015A81DCC74AB0024C5F6 /* LeeSortListCell.xib in Resources */,
+				84E015CC1DCC79920024C5F6 /* LeeHomeCycleView.xib in Resources */,
+				84E015DB1DCC7BBA0024C5F6 /* LeeCotentCell.xib in Resources */,
+				84E015BA1DCC74ED0024C5F6 /* LeeTopBanner.xib in Resources */,
+				84E015CD1DCC79920024C5F6 /* LeeHomeSearchView.xib in Resources */,
+				84E015771DCC74250024C5F6 /* LeeLoginViewController.xib in Resources */,
+				84E015831DCC74840024C5F6 /* LeeSingleProductViewController.xib in Resources */,
 				84D4FD211DCC15FC00F4407D /* Assets.xcassets in Resources */,
+				84E015991DCC749B0024C5F6 /* LeeCateHeaderReusableView.xib in Resources */,
+				84E0159D1DCC749B0024C5F6 /* LeeCateReusableView.xib in Resources */,
+				84E015A11DCC749B0024C5F6 /* LeeSingleCollecitionCell.xib in Resources */,
+				84E015611DCC72F90024C5F6 /* LeeBottomToBuyView.xib in Resources */,
+				84E015AA1DCC74AB0024C5F6 /* LeeSortView.xib in Resources */,
+				84E015B71DCC74ED0024C5F6 /* LeeHotCoverView.xib in Resources */,
+				84E015D31DCC7B0F0024C5F6 /* LeeTopCollectionCell.xib in Resources */,
+				84E015CF1DCC79920024C5F6 /* LeeMiddleView.xib in Resources */,
+				84E015651DCC72F90024C5F6 /* LeeProductDetailReusable.xib in Resources */,
+				84E015971DCC749B0024C5F6 /* LeeCategoryTopView.xib in Resources */,
+				84E015C01DCC765D0024C5F6 /* FZLTXHK.TTF in Resources */,
+				84E015BC1DCC756E0024C5F6 /* LeeHomeSearchView.xib in Resources */,
+				84E0159F1DCC749B0024C5F6 /* LeeCateTopCell.xib in Resources */,
+				84E015D71DCC7B9D0024C5F6 /* LeeMiddleBannerCell.xib in Resources */,
+				84E0159B1DCC749B0024C5F6 /* LeeCateMoreBtnCell.xib in Resources */,
+				84E0154E1DCC722D0024C5F6 /* LeeSingleTableCell.xib in Resources */,
+				84E015811DCC74840024C5F6 /* LeeSingleListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CDE844FB139F0C6EEFFD8CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiftShow/Pods-GiftShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A59E962FB8A117E7C3CF95A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiftShow/Pods-GiftShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A6D73F097701CED5DBE861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D4FD121DCC15FC00F4407D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E0159E1DCC749B0024C5F6 /* LeeCateTopCell.swift in Sources */,
+				84E015481DCC722D0024C5F6 /* LeeCategoryModel.swift in Sources */,
+				84E015591DCC72E90024C5F6 /* LeeListDetailModel.swift in Sources */,
+				84E015561DCC72DD0024C5F6 /* LeeProductRecommendDetailViewController.swift in Sources */,
+				84E0154B1DCC722D0024C5F6 /* LeeSingleCateModel.swift in Sources */,
+				84D4FD5B1DCC592400F4407D /* LeeHomeBottomView.swift in Sources */,
+				84E015371DCC713C0024C5F6 /* LeeMiddleBannerModel.swift in Sources */,
+				84E015931DCC749B0024C5F6 /* LeeCategoryCell.swift in Sources */,
+				84E015551DCC72DD0024C5F6 /* LeeProductDetailViewController.swift in Sources */,
 				84D4FD521DCC28D200F4407D /* Common.swift in Sources */,
+				84E015BE1DCC75730024C5F6 /* LeeHomeSearchView.swift in Sources */,
+				84E0157F1DCC74840024C5F6 /* LeeRaidersViewController.swift in Sources */,
+				84E015AC1DCC74D80024C5F6 /* LeeHotCategoryViewController.swift in Sources */,
+				84E0153F1DCC718D0024C5F6 /* LeeGiftNetworkTool.swift in Sources */,
+				84E015D21DCC7B0F0024C5F6 /* LeeTopCollectionCell.swift in Sources */,
+				84E0153B1DCC716A0024C5F6 /* LeeHotBannerModel.swift in Sources */,
+				84E015B81DCC74ED0024C5F6 /* LeeHotTopBanner.swift in Sources */,
+				84E015541DCC72DD0024C5F6 /* LeeCommonDetailViewController.swift in Sources */,
+				84E015A01DCC749B0024C5F6 /* LeeSingleCollecitionCell.swift in Sources */,
 				84D4FD471DCC280000F4407D /* LeeHotViewController.swift in Sources */,
+				84E015361DCC713C0024C5F6 /* LeeCotentModel.swift in Sources */,
+				84E015321DCC713C0024C5F6 /* LeeAuthor.swift in Sources */,
+				84E0154C1DCC722D0024C5F6 /* LeeSingleModel.swift in Sources */,
+				84E015791DCC74380024C5F6 /* LeeRefresh.swift in Sources */,
+				84E015821DCC74840024C5F6 /* LeeSingleProductViewController.swift in Sources */,
 				84D4FD491DCC282100F4407D /* LeeCategoryViewController.swift in Sources */,
 				84D4FD531DCC28D200F4407D /* UIColor+extension.swift in Sources */,
+				84E015571DCC72DD0024C5F6 /* LeeProductWebDetailViewController.swift in Sources */,
+				84E015351DCC713C0024C5F6 /* LeeColumn.swift in Sources */,
+				84E0154F1DCC722D0024C5F6 /* LeeTopCategoryModel.swift in Sources */,
+				84E015751DCC74250024C5F6 /* LeeBaseFatherViewController.swift in Sources */,
+				84E0152B1DCC71180024C5F6 /* LeeHomeVVModel.swift in Sources */,
 				84D4FD4F1DCC289400F4407D /* LeeNavgationController.swift in Sources */,
 				84D4FD451DCC27E500F4407D /* LeeHomeViewController.swift in Sources */,
 				84D4FD1A1DCC15FC00F4407D /* AppDelegate.swift in Sources */,
 				84D4FD561DCC28E700F4407D /* UIBarButtonItem+Item.swift in Sources */,
+				84E015491DCC722D0024C5F6 /* LeeCateSingleListModel.swift in Sources */,
+				84E0153C1DCC716A0024C5F6 /* LeeHotMainModel.swift in Sources */,
+				84E015981DCC749B0024C5F6 /* LeeCateHeaderReusableView.swift in Sources */,
+				84E0154A1DCC722D0024C5F6 /* LeeChannerModel.swift in Sources */,
+				84E015341DCC713C0024C5F6 /* LeeBaseModel.swift in Sources */,
+				84E015A91DCC74AB0024C5F6 /* LeeSortView.swift in Sources */,
+				84E015601DCC72F90024C5F6 /* LeeBottomToBuyView.swift in Sources */,
 				84D4FD4E1DCC289400F4407D /* LeeBaseViewController.swift in Sources */,
+				84E015B91DCC74ED0024C5F6 /* LeeTopBanner.swift in Sources */,
+				84E015B51DCC74ED0024C5F6 /* LeeHotContentCell.swift in Sources */,
+				84E015A71DCC74AB0024C5F6 /* LeeSortListCell.swift in Sources */,
+				84E015C41DCC79560024C5F6 /* LeeHomeWonderfulViewController.swift in Sources */,
+				84E015CB1DCC79920024C5F6 /* LeeHomeCycleView.swift in Sources */,
+				84E015DA1DCC7BBA0024C5F6 /* LeeCotentCell.swift in Sources */,
+				84E015B61DCC74ED0024C5F6 /* LeeHotCoverView.swift in Sources */,
+				84E015631DCC72F90024C5F6 /* LeeProductBottomView.swift in Sources */,
+				84E0159A1DCC749B0024C5F6 /* LeeCateMoreBtnCell.swift in Sources */,
+				84E015331DCC713C0024C5F6 /* LeeBannerModel.swift in Sources */,
+				84E0153D1DCC716A0024C5F6 /* LeeHotModel.swift in Sources */,
+				84E015951DCC749B0024C5F6 /* LeeCategoryNavView.swift in Sources */,
+				84E015CE1DCC79920024C5F6 /* LeeMiddleView.swift in Sources */,
+				84E015621DCC72F90024C5F6 /* LeeDetailBanner.swift in Sources */,
 				84D4FD571DCC28E700F4407D /* UIImage+Extension.swift in Sources */,
+				84E015C31DCC79560024C5F6 /* LeeHomeOtherViewController.swift in Sources */,
+				84E015761DCC74250024C5F6 /* LeeLoginViewController.swift in Sources */,
+				84E015961DCC749B0024C5F6 /* LeeCategoryTopView.swift in Sources */,
+				84D4FD591DCC58A800F4407D /* LeeHomeBannerView.swift in Sources */,
+				84E015801DCC74840024C5F6 /* LeeSingleListViewController.swift in Sources */,
 				84D4FD4B1DCC284200F4407D /* LeeMeViewController.swift in Sources */,
+				84E0159C1DCC749B0024C5F6 /* LeeCateReusableView.swift in Sources */,
+				84E015D61DCC7B9D0024C5F6 /* LeeMiddleBannerCell.swift in Sources */,
+				84E015641DCC72F90024C5F6 /* LeeProductDetailReusable.swift in Sources */,
+				84E015B41DCC74ED0024C5F6 /* LeeHotBottomView.swift in Sources */,
+				84E0154D1DCC722D0024C5F6 /* LeeSingleTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +893,7 @@
 		};
 		84D4FD291DCC15FC00F4407D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF63EEA74C66E4E0480E6F8 /* Pods-GiftShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -481,6 +909,7 @@
 		};
 		84D4FD2A1DCC15FC00F4407D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1FB3F3C54FE195E57BC28C /* Pods-GiftShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -513,6 +942,7 @@
 				84D4FD2A1DCC15FC00F4407D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

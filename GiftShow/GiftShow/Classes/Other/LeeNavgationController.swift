@@ -33,7 +33,6 @@ class LeeNavgationController: UINavigationController {
             button .setTitle("返回", for: UIControlState())
             
             button .setImage(UIImage(named:"navigationButtonReturn"), for: UIControlState())
-            
             button .setImage(UIImage(named:"navigationButtonReturnClick"), for: UIControlState.highlighted)
             
             button.size = CGSize(width: 70, height: 30)

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionId" id="gTV-IL-0wX" customClass="LeeCategoryCell" customModule="GiftShow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="94"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fyo-Lo-9So">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="94"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Fyo-Lo-9So" secondAttribute="bottom" id="XOM-dn-axW"/>
+                <constraint firstItem="Fyo-Lo-9So" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZCK-lG-jJ1"/>
+                <constraint firstItem="Fyo-Lo-9So" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n5Q-Ud-P2m"/>
+                <constraint firstAttribute="trailing" secondItem="Fyo-Lo-9So" secondAttribute="trailing" id="yzr-da-qE0"/>
+            </constraints>
+            <size key="customSize" width="179" height="94"/>
+            <connections>
+                <outlet property="backImageView" destination="Fyo-Lo-9So" id="hL8-28-fRK"/>
+            </connections>
+            <point key="canvasLocation" x="706.5" y="275"/>
+        </collectionViewCell>
+    </objects>
+</document>

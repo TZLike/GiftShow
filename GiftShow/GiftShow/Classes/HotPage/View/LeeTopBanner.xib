@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeeTopBanner" customModule="GiftShow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbB-bQ-aAc" userLabel="切换选项卡按钮">
+                    <rect key="frame" x="250" y="0.0" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8Va-tN-2gG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="giftcategorydetail_arrow_down_gray">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="giftcategorydetail_arrow_up_gray"/>
+                    <state key="highlighted" image="giftcategorydetail_arrow_down_gray"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WY-WR-6QC">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mx8-1w-3oE">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pbB-bQ-aAc" firstAttribute="leading" secondItem="mx8-1w-3oE" secondAttribute="trailing" id="2yg-WA-fjn"/>
+                <constraint firstItem="mx8-1w-3oE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4O0-2O-1jv"/>
+                <constraint firstItem="mx8-1w-3oE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7iu-Gv-AVM"/>
+                <constraint firstAttribute="trailing" secondItem="pbB-bQ-aAc" secondAttribute="trailing" id="A4p-UL-gfB"/>
+                <constraint firstItem="pbB-bQ-aAc" firstAttribute="leading" secondItem="9WY-WR-6QC" secondAttribute="trailing" id="I1N-HH-ezX"/>
+                <constraint firstAttribute="bottom" secondItem="mx8-1w-3oE" secondAttribute="bottom" id="IcX-0X-Rz4"/>
+                <constraint firstAttribute="bottom" secondItem="pbB-bQ-aAc" secondAttribute="bottom" id="Psz-nc-WJS"/>
+                <constraint firstItem="pbB-bQ-aAc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z8o-JJ-vb7"/>
+                <constraint firstAttribute="bottom" secondItem="9WY-WR-6QC" secondAttribute="bottom" id="ZDh-c0-DeE"/>
+                <constraint firstItem="9WY-WR-6QC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="esu-dN-oOe"/>
+                <constraint firstItem="9WY-WR-6QC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hrN-nP-r8P"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myScrollview" destination="mx8-1w-3oE" id="sW9-Te-0Zh"/>
+                <outlet property="swichBtn" destination="pbB-bQ-aAc" id="isD-1r-uLc"/>
+                <outlet property="taskCover" destination="9WY-WR-6QC" id="OUF-su-270"/>
+            </connections>
+            <point key="canvasLocation" x="338" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="giftcategorydetail_arrow_down_gray" width="6" height="3"/>
+        <image name="giftcategorydetail_arrow_up_gray" width="6" height="3"/>
+    </resources>
+</document>

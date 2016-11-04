@@ -1,0 +1,12 @@
+platform :ios, "8.0"
+use_frameworks!
+
+xcodeproj 'GiftShow.xcodeproj'
+
+target 'GiftShow' do
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'SnapKit'
+end
